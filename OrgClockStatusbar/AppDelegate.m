@@ -39,6 +39,7 @@
 
 -(void) clockIn:(NSString*)taskName {
     self.statusBar.image = self.orgClockedIn;
+    self.statusBar.title = taskName;
     [self.statusBar.menu itemWithTag:1].title = [self currentTaskName: taskName];
     self.statusBar.toolTip = taskName;
     self.status = YES;
