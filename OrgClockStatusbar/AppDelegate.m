@@ -48,6 +48,7 @@
 -(void) clockOut {
     NSString* taskName = @"nil";
     self.statusBar.image = self.orgClockedOut;
+    self.statusBar.title = @"";
     [self.statusBar.menu itemWithTag:1].title = [self currentTaskName: taskName];
     self.statusBar.toolTip = taskName;
     self.status = NO;
